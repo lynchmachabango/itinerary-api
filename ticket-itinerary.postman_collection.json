@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "0f95c1d0-b00d-4833-9afc-ee51f21831ae",
+		"name": "ticket-itinerary",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "4889645"
+	},
+	"item": [
+		{
+			"name": "sorteditinerary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"tickets\": [\n        {\n            \"type\": \"train\",\n            \"departure\": \"St. Anton am Arlberg Bahnhof\",\n            \"arrival\": \"Innsbruck Hbf\",\n            \"details\": \"Platform 3. Seat number 17C.\"\n        },\n        {\n            \"type\": \"tram\",\n            \"departure\": \"Innsbruck Hbf\",\n            \"arrival\": \"Innsbruck Airport\",\n            \"details\": \"\"\n        },\n        {\n            \"type\": \"flight\",\n            \"departure\": \"Innsbruck Airport\",\n            \"arrival\": \"Venice Airport\",\n            \"details\": \"Gate 10, seat 18B. Self-check-in luggage at counter.\"\n        },\n        {\n            \"type\": \"train\",\n            \"departure\": \"Gara Venetia Santa Lucia\",\n            \"arrival\": \"Bologna San Ruffillo\",\n            \"details\": \"Platform 1. Seat number 13F.\"\n        },\n        {\n            \"type\": \"bus\",\n            \"departure\": \"Bologna San Ruffillo\",\n            \"arrival\": \"Bologna Guglielmo Marconi Airport\",\n            \"details\": \"No seat assignment.\"\n        },\n        {\n            \"type\": \"flight\",\n            \"departure\": \"Bologna Guglielmo Marconi Airport\",\n            \"arrival\": \"Paris CDG Airport\",\n            \"details\": \"Gate 22, seat 10A. Self-check-in luggage at counter.\"\n        },\n        {\n            \"type\": \"flight\",\n            \"departure\": \"Paris CDG Airport\",\n            \"arrival\": \"Chicago O'Hare\",\n            \"details\": \"Gate 32, seat 10A. Luggage will transfer automatically from the last flight.\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/index.php"
+			},
+			"response": []
+		}
+	]
+}
